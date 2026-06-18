@@ -13,7 +13,7 @@
     <div class="header">
         <div class="layoutHeader">
             <div class="left">
-                <h1>🌄 TO-DO LIST FOR TODAY</h1>
+                <h1>🌄 TO-DO LIST</h1>
             </div>
             <div class="right">
                 <button id="buttonMenu" type="button">
@@ -32,9 +32,18 @@
                 <form id="form">
                     <textarea name="task" id="task" class="tastArea" cols="240" rows="1"
                         placeholder="Add task"></textarea>
+                    <div class="calender">
+                        <input type="date" name="date" id="date" class="input_date">
+                    </div>
                     <button id="ButtonPlus" type="submit">
                         <img src="img/plus.svg" alt="plus_svg" class="plus">
                     </button>
+                    <select name="select_level" id="option_value" class="selectStyle">
+                        <option value="">LEVEL</option>
+                        <option id="low">Low</option>
+                        <option id="medium">Meidium</option>
+                        <option id="hight">Hight</option>
+                    </select>
                     <button class="deleteAll" id="deleteAll">DELETE ALL</button>
                 </form>
             </div>

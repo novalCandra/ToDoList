@@ -22,6 +22,7 @@ body {
     height: 100%;
 }
 
+
 .header {
     position: relative;
     min-height: 100vh;
@@ -180,13 +181,37 @@ body {
 
 .header main .task form .deleteAll {
     color: white;
-    width: 98%;
+    width: 99%;
     background-color: salmon;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 0.9rem;
     margin-top: 2.6rem;
+    cursor: pointer;
+}
+
+.header main .task form .calender {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header main .task form .calender .input_date {
+    background-color: var(--bg-primary-);
+    border: none;
+    color: white;
+}
+
+.header main .task form .selectStyle {
+    color: white;
+    width: 100%;
+    background-color: skyblue;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 3rem;
     cursor: pointer;
 }
 
@@ -207,7 +232,6 @@ body {
 
     .header main .tastArea {
         padding: 10px 20px;
-        width: 22rem;
         background-color: var(--bg-textarea);
         border-radius: 5px;
         color: white;
@@ -215,13 +239,33 @@ body {
         resize: none;
     }
 
+    .header main .task form .calender {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .header main .task form .calender .input_date {
+        background-color: var(--bg-primary-);
+        border: none;
+        color: white;
+    }
+
+    .header main .task form .calender .input_date::-webkit-calendar-picker-indicator {
+        background-color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
     .header main .taskContent .taskOne .contenTask {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 0.6rem;
-        width: 20rem;
         padding: 12px 12px;
     }
+
 
     .header main .taskContent .taskOne .contenTask p {
         color: white;
@@ -265,6 +309,19 @@ body {
         font-weight: bold;
         font-size: 0.9rem;
         margin-top: 2.6rem;
+        cursor: pointer;
+    }
+
+
+    .header main .task form .selectStyle {
+        color: white;
+        width: 95%;
+        background-color: skyblue;
+        padding: 7px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-top: 3rem;
         cursor: pointer;
     }
 
