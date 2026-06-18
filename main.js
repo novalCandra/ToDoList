@@ -4,6 +4,9 @@ const form = document.getElementById("form")
 const valueTaskContent = document.getElementById("task_content");
 const task = document.getElementById("value_task");
 const deleteAll = document.getElementById("deleteAll");
+const buttonMenu = document.getElementById("buttonMenu");
+const listDropdown = document.getElementById("listDropdown")
+// console.log(listDropdown)
 textatea.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         e.preventDefault();
@@ -48,4 +51,9 @@ deleteAll.addEventListener("click", (e) => {
     if (e.target.classList.contains("delete")) {
         e.target.parentElement.remove()
     }
+})
+
+buttonMenu.addEventListener("click", () => {
+    console.log("hello")
+    listDropdown.classList.toggle("block")
 })

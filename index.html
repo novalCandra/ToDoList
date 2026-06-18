@@ -13,11 +13,17 @@
     <div class="header">
         <div class="layoutHeader">
             <div class="left">
-                <img src="img/menu.svg" alt="foto" id="button_menu" class="menu">
                 <h1>🌄 Hari ini</h1>
             </div>
             <div class="right">
-                <img src="img/more.svg" alt="foto__more" id="more_button" class="more">
+                <button id="buttonMenu" type="button">
+                    <img src="img/more.svg" alt="foto__more" id="more_button" class="more">
+                    <ul class="dropDown" id="listDropdown">
+                        <li>PROFILE</li>
+                        <li>MATRIX</li>
+                        <li>KELUAR</li>
+                    </ul>
+                </button>
             </div>
         </div>
         <main>
@@ -25,10 +31,9 @@
                 <form id="form">
                     <textarea name="task" id="task" class="tastArea" cols="240" rows="1"
                         placeholder="Add task"></textarea>
-                    <button type="submit">
+                    <button id="ButtonPlus" type="submit">
                         <img src="img/plus.svg" alt="plus_svg" class="plus">
                     </button>
-
                     <button class="deleteAll" id="deleteAll">DELETE ALL</button>
                 </form>
             </div>
