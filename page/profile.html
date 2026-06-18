@@ -4,11 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFILE</title>
+    <title>TODOLIST - PROFILE</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
-
+<body class="profile">
+    <div class="profileHeader">
+        <header>
+            <div class="left">
+                <h1>👤 PROFILE</h1>
+            </div>
+            <div class="right">
+                <button id="buttonMenuProfile" type="button">
+                    <img src="../img/more.svg" alt="foto__more" id="more_button" class="more" width="40">
+                    <ul class="dropDown" id="listDropdownProfile">
+                        <li><a href="page/profile.html" style="text-decoration: none; color: white;">PROFILE</a></li>
+                        <li>MATRIX</li>
+                        <li><a href="../index.html" style="text-decoration: none; color: white;">TODOLIST</a></li>
+                        <li>KELUAR</li>
+                    </ul>
+                </button>
+            </div>
+        </header>
+        <main class="contenLayout">
+            <img src="../img/avatar.png" alt="foto_Profile" class="foto_profile">
+            <div class="DeskripsiProfile">
+                <h3>Name :</h3>
+                <h2>Savira Olivia Putri</h2>
+                <h3>Jabatan : </h3>
+                <h2>DEVELOPER</h2>
+            </div>
+        </main>
+    </div>
+    <script src="../profile.js"></script>
 </body>
 
 </html>
