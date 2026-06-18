@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+    --bg-primary-: #2C3947;
+    --bg-primaryHover: #2b3541;
+    --bg-textarea: #2C3947;
+    --border-Blue: #4BB8FA;
+}
+
+/* TODO */
+body {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg-primary-);
+    padding: 12px 12px;
+}
+
+.header .layoutHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .layoutHeader .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .layoutHeader .left .menu {
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.header .layoutHeader .left h1 {
+    color: white;
+}
+
+
+.header .layoutHeader .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .layoutHeader .right .more {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 3rem;
+    background-color: transparent;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.header .layoutHeader .right .more:hover {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 3rem;
+    background-color: var(--bg-primaryHover);
+    border-radius: 10px;
+}
+
+
+.header main {
+    position: relative;
+    padding: 12px 12px;
+}
+
+.header main .tastArea {
+    padding: 10px 20px;
+    background-color: var(--bg-textarea);
+    border-radius: 5px;
+    color: white;
+    border: 1px solid gray;
+    resize: none;
+}
+
+
+.header main .task form button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 22px;
+    left: 14px;
+}
+
+.header main .tastArea:focus {
+    border: 1px solid var(--border-Blue);
+    outline: none;
+}
+
+.header main .taskContent {
+    margin-top: 12px;
+}
+
+.header main .taskContent .taskOne {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+
+.header main .taskContent .taskOne .contenTask {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.header main .taskContent .taskOne .contenTask p {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header main .taskContent .taskOne .contenTask p.coretan {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+
+.header main .taskContent .taskOne .delete {
+    color: white;
+    background-color: salmon;
+    padding: 12px 12px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.header main .task form .deleteAll {
+    color: white;
+    width: 98%;
+    background-color: salmon;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 2.6rem;
+    cursor: pointer;
+}
+
+
+@media(max-width:660px) {
+    .header {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        background-color: var(--bg-primary-);
+        padding: 12px 12px;
+    }
+
+    .header main {
+        position: relative;
+        padding: 12px 12px;
+    }
+
+    .header main .tastArea {
+        padding: 10px 20px;
+        width: 22rem;
+        background-color: var(--bg-textarea);
+        border-radius: 5px;
+        color: white;
+        border: 1px solid gray;
+        resize: none;
+    }
+
+    .header main .taskContent .taskOne .contenTask {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        width: 20rem;
+        padding: 12px 12px;
+    }
+
+    .header main .taskContent .taskOne .contenTask p {
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .header main .taskContent .taskOne .contenTask p.coretan {
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: line-through;
+    }
+
+    .header main .taskContent .taskOne .kategory {
+        color: white;
+        background-color: skyblue;
+        padding: 7px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left: auto;
+    }
+
+    .header main .taskContent .taskOne .delete {
+        color: white;
+        background-color: salmon;
+        padding: 7px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left: auto;
+    }
+
+    .header main .task form .deleteAll {
+        color: white;
+        width: 90%;
+        background-color: salmon;
+        padding: 7px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-top: 2.6rem;
+        cursor: pointer;
+    }
+}
+
+/* end todo */

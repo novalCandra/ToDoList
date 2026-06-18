@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOLIST</title>
+    <link rel="shortcut icon" href="img/todolist.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="layoutHeader">
+            <div class="left">
+                <img src="img/menu.svg" alt="foto" id="button_menu" class="menu">
+                <h1>🌄 Hari ini</h1>
+            </div>
+            <div class="right">
+                <img src="img/more.svg" alt="foto__more" id="more_button" class="more">
+            </div>
+        </div>
+        <main>
+            <div class="task">
+                <form id="form">
+                    <textarea name="task" id="task" class="tastArea" cols="240" rows="1"
+                        placeholder="Add task"></textarea>
+                    <button type="submit">
+                        <img src="img/plus.svg" alt="plus_svg" class="plus">
+                    </button>
+
+                    <button class="deleteAll" id="deleteAll">DELETE ALL</button>
+                </form>
+            </div>
+            <div class="taskContent">
+                <div id="task_content" class="taskOne">
+                    <div id="content" class="contenTask">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
