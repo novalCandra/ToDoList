@@ -10,27 +10,30 @@ const tanggal = document.getElementById("date");
 textatea.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         e.preventDefault();
-        if (textatea.value.trim() === "") {
-            return console.log("wajib diisi")
+        if (textatea.value.trim() === "" || tanggal.value === "") {
+            return alert("wajib diisi")
         }
-        console.log(tanggal.value)
         const checbox = document.createElement("div");
         const textData = document.createElement("p");
         const buttonDelete = document.createElement("button")
         const textdataTanggal = document.createElement("span");
+        const inputChecbox = document.createElement("input")
+        // opsi level
+        const selectLevel = document.getElementById("option_value");
+        const level = selectLevel.value
+        inputChecbox.type = "checkbox";
         buttonDelete.setAttribute("id", "deleteTask")
         textData.setAttribute("id", "idTask");
-        textData.innerText = textatea.value
-        textdataTanggal.innerText = tanggal.value
-        textdataTanggal.style.color = "white"
-        buttonDelete.innerText = 'DELETE'
-        buttonDelete.classList.add("delete")
-        checbox.classList.add("contenTask")
-        textatea.classList.add("coretan")
-        checbox.innerHTML = `
-        <input type="checkbox" name="task" id='task1'>
-        `;
+        textData.innerText = textatea.value;
+        textdataTanggal.innerText = tanggal.value;
+        textdataTanggal.style.color = "white";
+        buttonDelete.innerText = 'DELETE';
+        buttonDelete.classList.add("delete");
+        checbox.classList.add("contenTask");
+        textatea.classList.add("coretan");
+        inputChecbox.classList.add("checkbox", level);
         valueTaskContent.appendChild(checbox)
+        checbox.appendChild(inputChecbox)
         checbox.append(textData)
         checbox.append(textdataTanggal)
         checbox.append(buttonDelete)
